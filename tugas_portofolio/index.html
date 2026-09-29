@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Friska</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Friska</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#keahlian">Keahlian</a></li>
+                <li><a href="#proyek">Proyek</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="tentang" class="hero">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <h1>안녕하세요!</h1>
+                <h2>Aku Friska 🌺🌺</h2>
+                <p class="hero-desc">
+                    Aku tumbuh bersama seni, 
+                    mencoba banyak hal tanpa pernah benar-benar tahu akan berlabuh di mana. 
+                    Sejak SMA,
+                    aku menikmati olahraga, seni, hingga sains.
+                    Namun, tak pernah terpikir oleh ku 
+                    untuk menyentuh dunia pemrograman.
+                    Hingga pada akhirnya, 
+                    di sinilah aku mulai belajar dari nol. 
+                    Aku tak mengejar kesempurnaan; 
+                    cukup bagiku, setiap langkah adalah sesuatu yang baru untuk dikenali.
+                </p>
+                <a href="#proyek" class="btn-cherry">Lihat proyek saya</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/foto_profil.png" alt="Foto Profil Friska" class="profile-photo">
+            </div>
+        </div>
+    </section>
+
+    <section id="keahlian" class="skills">
+        <div class="container">
+            <h2 class="section-title">Keahlian</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Memanah</h3>
+                    <p>Olahraga yang melatih fokus, ketenangan, dan ketepatan.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3>Menulis</h3>
+                    <p>Menulis cerpen, AU (Alternate Universe), dan puisi.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Membaca</h3>
+                    <p>Menjelajahi dunia baru melalui buku dan cerita.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Melukis</h3>
+                    <p>Mengekspresikan ide dan perasaan melalui warna dan gambar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyek" class="projects">
+        <div class="container">
+            <h2 class="section-title">Proyek</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/project_1.png" alt="Tangkapan layar proyek 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Just Play</h3>
+                        <p>Aplikasi karaoke berbasis mobile untuk bernyanyi kapan saja..</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/project_2.png" alt="Tangkapan layar proyek 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Acai go!</h3>
+                        <p>Game petualangan mobile yang menggunakan matriks untuk sistem level dan pergerakan karakter.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="images/project_3.png" alt="Tangkapan layar proyek 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Fri&Eat</h3>
+                        <p>Aplikasi mobile yang membantu menemukan restoran sekitar dan mencocokkan dengan teman makan yang punya selera serupa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="contact">
+        <div class="container">
+            <h2 class="section-title">Kontak</h2>
+            <p class="contact-desc">
+                Tertarik untuk berkolaborasi atau sekadar menyapa? Silakan hubungi saya melalui:
+            </p>
+            <div class="contact-links">
+                <a href="https://www.instagram.com/diizef?stkn=emN2NjM2cjQwZDRy" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://github.com/frskafdilh" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Friska. Dibuat sebagai tugas praktikum pemrograman web.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
